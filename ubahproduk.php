@@ -15,6 +15,14 @@
         $qry_get_produk=mysqli_query($conn,"select * from produk where
         id_produk = '".$_GET['id_produk']."'");
         $dt_produk=mysqli_fetch_array($qry_get_produk);
+        
+        // **
+        // debugging
+        echo "<pre>";
+        print_r($dt_produk);
+        echo "<pre>";
+        // EOL debugging
+        // **
         ?>
 
         <h3>Ubah Produk</h3>
